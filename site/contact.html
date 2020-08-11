@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<title>Marcial Araracap</title>
+	<meta charset="utf-8">
+	
+	<!--Load Bootstrap-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!--Load Font Awesome for icons-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Load my styling-->
+	<link rel="stylesheet" href="css/style.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	  <script src="https://smtpjs.com/v3/smtp.js"></script>
+	<!--Load Google font, Poiret One/Roboto 400-->
+	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto&display=swap" rel="stylesheet">
+	
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto&display=swap');
+		</style>
+</head>
+<body>
+	<!--Navbar-->
+	<!--Brand-->
+	<nav id="nav" class="navbar">
+		<div class="container">
+			<a class="navbar-brand" href="/index.html">Marcial A.</a>
+	<!--Brand-->
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+			  <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="/about.html">About</a>
+			</li>
+			<li class="nav-item  active">
+				<a class="nav-link" href="/contact.html">Contact</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="/projects.html">Projects</a>
+			  </li>
+		  </ul>
+		  <!--Navbar-->
+		</div>
+	</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="wrapper">
+						<div class="contact">
+							<div id="message">
+								<!--Contents of email-->
+								<div class="formEmail">
+									<h2>Contact Me</h2>
+									<h2>Feel free to say hello!</h2>
+									</div>
+									<!--Begin form-->
+									<form action="#" id="form" method="post" name="form">
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label>First Name:</label>
+												<input class="form-control" name="fname" placeholder="First Name" type="text" value="">
+											</div>
+											<div class="form-group col-md-6">
+												<label>Last Name:</label>
+												<input class="form-control" name="lname" placeholder="Last Name" type="text" value="">
+											</div>
+										</div>
+										<label>Email:</label>
+										<input class="form-control" name="email" placeholder="Enter Email" type="email" value="">
+										<label>Subject:</label>
+										<input class="form-control" name="subject" placeholder="Subject" type="text" value="">
+										<label>Message:</label>
+										<textarea class="form-control" rows="3" name="msgBox" placeholder="Begin your message here.."></textarea>
+										<input class="btn btn-primary" id="send" name="submit" type="submit" value="Send Email">
+									</form>
+									<?php include "mail.php"?;>
+									<?php echo $success; ?>
+								</div>
+								<!--End of Form-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="wrapper">
+						<div class="contact">
+							<br>
+							<h3 >You can also find me on:</h3>
+							<ul>
+								<a class="socialTag"  href="https://www.linkedin.com/in/marcial-araracap-88179398/"><li>Linkedin</li></a><br>
+								<a class="socialTag" href="https://github.com/Marcial-A"><li>GitHub</li></a>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<footer>
+					<p>Created by: Marcial Araracap</p>
+					<p>Email Me: <a href="mailto:marcialararacap@gmail.com"> &nbsp;<span class="fa fa-envelope" aria-hidden="true"></span></a></p>
+				</footer>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
